@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>Overview</h1>
+<br></br>
+<p>
+In order to make the most of this application, try finding two articles that report on the same story from different
+news websites or sources. I've included a list of some popular news websites of different political persuasions
+at the bottom of the page.
+</p>
+<p>
+All you need to do is copy and paste the URLs to the articles into the boxes in <b>Compare</b> and click compare.
+</p>
+<p>
+You'll then receive two <a href="https://datavizcatalogue.com/methods/donut_chart.html">donut charts</a>
+that will show you the breakdown of positive, negative and neutral sentiment for both articles. Please
+note that you should expect to receive a high percentage of neutral sentiment (around 70-90%). The
+interesting part here is to focus on the difference between positive and negative sentiment.
+</p>
+<p>
+In addition to the sentiment analysis, I've also calculated some basic syntactic differences between the
+two articles. These include the number of characters, the number of sentences and the number of quotations
+used by the articles. Below this is a list of the ten most common words used in each article.
+</p>
+
+<p>
+<li><a href="https://www.nytimes.com/">The New York Times</a></li>
+<li><a href="http://www.foxnews.com/">Fox News</a></li>
+<li><a href="https://www.reuters.com/">Reuters</a></li>
+<li><a href="http://www.bbc.com/">BBC</a></li>
+<li><a href="https://www.usatoday.com/">USA Today</a></li>
+<li><a href="https://www.theguardian.com/us">The Guardian</a></li>
+<li><a href="https://www.npr.org/">NPR</a></li>
+<li><a href="http://thehill.com/">The Hill</a></li>
+<li><a href="http://www.breitbart.com/">Breitbart</a></li>
+</p>
+<p>
+    Please note that there are currently problems with reading data from cnn.com and huffingtonpost.com. If you happen
+    to encounter any problems with other websites then please let me know via the contact page!
+</p>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>Compare</h1>
+<br></br>
+<div class="row">
+<br></br>
+<div class="col">
+        <form action="/compare" enctype="multipart/form-data" method="post">
+
+            Post 1st article URL here: <input type="url" name="url1" placeholder="Enter 1st URL here"/> <br><br>
+            Post 2nd article URL here: <input type="url" name="url2" placeholder="Enter 2nd URL here"/> <br><br>
+            <button type="submit">Compare</button>
+
+        </form>
+</div>
+</div>
+{% endblock %}
